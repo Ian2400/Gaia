@@ -1,0 +1,81 @@
+{
+  "$comment": "Role -> deity lookup tables. The factory is written against roles; a pantheon is a skin. 'name' is the display name used in prose; 'slug' is the ASCII identifier used in agent names (<temple>-<slug>). Any god may be overridden per-temple in config.json. A custom pantheon is a user-supplied table with the same role keys.",
+  "roles": {
+    "core": ["orchestrator", "architect", "builder", "test_hunter", "reviewer", "law_keeper", "herald"],
+    "reserve": ["chronicler", "steward", "deep_keeper", "healer", "victor", "muse", "reveler"]
+  },
+  "pantheons": {
+    "greek": {
+      "display": "Greek",
+      "mount": "Olympus",
+      "orchestrator": { "name": "Zeus", "slug": "zeus" },
+      "architect": { "name": "Athena", "slug": "athena" },
+      "builder": { "name": "Hephaestus", "slug": "hephaestus" },
+      "test_hunter": { "name": "Artemis", "slug": "artemis" },
+      "reviewer": { "name": "Apollo", "slug": "apollo" },
+      "law_keeper": { "name": "Themis", "slug": "themis" },
+      "herald": { "name": "Hermes", "slug": "hermes" },
+      "chronicler": { "name": "Mnemosyne", "slug": "mnemosyne" },
+      "steward": { "name": "Hestia", "slug": "hestia" },
+      "deep_keeper": { "name": "Poseidon", "slug": "poseidon" },
+      "healer": { "name": "Asclepius", "slug": "asclepius" },
+      "victor": { "name": "Nike", "slug": "nike" },
+      "muse": { "name": "The Muses", "slug": "muses" },
+      "reveler": { "name": "Dionysus", "slug": "dionysus" }
+    },
+    "roman": {
+      "display": "Roman",
+      "mount": "Capitoline",
+      "orchestrator": { "name": "Jupiter", "slug": "jupiter" },
+      "architect": { "name": "Minerva", "slug": "minerva" },
+      "builder": { "name": "Vulcan", "slug": "vulcan" },
+      "test_hunter": { "name": "Diana", "slug": "diana" },
+      "reviewer": { "name": "Veritas", "slug": "veritas" },
+      "law_keeper": { "name": "Iustitia", "slug": "iustitia" },
+      "herald": { "name": "Mercury", "slug": "mercury" },
+      "chronicler": { "name": "Moneta", "slug": "moneta" },
+      "steward": { "name": "Vesta", "slug": "vesta" },
+      "deep_keeper": { "name": "Neptune", "slug": "neptune" },
+      "healer": { "name": "Aesculapius", "slug": "aesculapius" },
+      "victor": { "name": "Victoria", "slug": "victoria" },
+      "muse": { "name": "The Camenae", "slug": "camenae" },
+      "reveler": { "name": "Bacchus", "slug": "bacchus" }
+    },
+    "norse": {
+      "display": "Norse",
+      "mount": "Asgard",
+      "orchestrator": { "name": "Odin", "slug": "odin" },
+      "architect": { "name": "Mimir", "slug": "mimir" },
+      "builder": { "name": "Völundr", "slug": "volundr" },
+      "test_hunter": { "name": "Skadi", "slug": "skadi" },
+      "reviewer": { "name": "Heimdall", "slug": "heimdall" },
+      "law_keeper": { "name": "Forseti", "slug": "forseti" },
+      "herald": { "name": "Hermóðr", "slug": "hermod" },
+      "chronicler": { "name": "Muninn", "slug": "muninn" },
+      "steward": { "name": "Frigg", "slug": "frigg" },
+      "deep_keeper": { "name": "Njörðr", "slug": "njord" },
+      "healer": { "name": "Eir", "slug": "eir" },
+      "victor": { "name": "Týr", "slug": "tyr" },
+      "muse": { "name": "Bragi", "slug": "bragi" },
+      "reveler": { "name": "Loki", "slug": "loki" }
+    },
+    "hindu": {
+      "display": "Hindu",
+      "mount": "Meru",
+      "orchestrator": { "name": "Indra", "slug": "indra" },
+      "architect": { "name": "Brihaspati", "slug": "brihaspati" },
+      "builder": { "name": "Vishvakarma", "slug": "vishvakarma" },
+      "test_hunter": { "name": "Durga", "slug": "durga" },
+      "reviewer": { "name": "Surya", "slug": "surya" },
+      "law_keeper": { "name": "Yama", "slug": "yama" },
+      "herald": { "name": "Narada", "slug": "narada" },
+      "chronicler": { "name": "Chitragupta", "slug": "chitragupta" },
+      "steward": { "name": "Annapurna", "slug": "annapurna" },
+      "deep_keeper": { "name": "Varuna", "slug": "varuna" },
+      "healer": { "name": "Dhanvantari", "slug": "dhanvantari" },
+      "victor": { "name": "Kartikeya", "slug": "kartikeya" },
+      "muse": { "name": "Saraswati", "slug": "saraswati" },
+      "reveler": { "name": "Krishna", "slug": "krishna" }
+    }
+  }
+}

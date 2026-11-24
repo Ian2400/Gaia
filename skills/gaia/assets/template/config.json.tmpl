@@ -1,0 +1,27 @@
+{
+  "$comment": "USER DATA — never overwritten by a Gaia engine upgrade. Forged {{FORGE_DATE}} by Gaia v{{GAIA_VERSION}}.",
+  "temple": {
+    "name": "{{TEMPLE}}",
+    "title": "{{TEMPLE_TITLE}}",
+    "purpose": "{{PURPOSE}}",
+    "pantheon": "{{PANTHEON}}",
+    "forged": "{{FORGE_DATE}}",
+    "engine_version": "{{GAIA_VERSION}}"
+  },
+  "roster": {
+    "$comment": "Roles staffed in this temple. Each entry: deity name, slug (agent file is <temple>-<slug>.md), and model tier. Overrides from the interview land here.",
+    "{{ROSTER_ENTRIES}}": "e.g. \"architect\": { \"name\": \"Athena\", \"slug\": \"athena\", \"model\": \"opus\" }"
+  },
+  "review_surface": {
+    "$comment": "Which decisions pause for the human. THE dial that distinguishes a work temple from an entertainment temple.",
+    "plan_approval": {{GATE_PLAN}},
+    "pause_per_task": {{GATE_PER_TASK}},
+    "creative_output": {{GATE_CREATIVE}},
+    "risky_code": {{GATE_RISKY_CODE}},
+    "merge": "always-human"
+  },
+  "limits": {
+    "max_parallel_agents": {{WIP_LIMIT}},
+    "max_fix_iterations": 3
+  }
+}
