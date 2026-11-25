@@ -1,0 +1,8 @@
+{
+  "name": "gaia",
+  "version": "0.1.0",
+  "description": "Forges bespoke AI factories: interviews you about one context of your work, surveys your account's tools, and raises a temple — a pantheon of specialized agents with laws, codices, and a gated assembly line — installed at the user level.",
+  "author": { "name": "Ian Pytlarz" },
+  "license": "MIT",
+  "homepage": "https://github.com/Ian2400/Gaia"
+}

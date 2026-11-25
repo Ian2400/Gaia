@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "gaia",
+  "description": "Forge bespoke AI factories (temples) for Claude Code, themed to the pantheon of your choice.",
+  "owner": { "name": "Ian Pytlarz" },
+  "plugins": [
+    {
+      "name": "gaia",
+      "source": "./",
+      "description": "Interviews you, surveys your account's tools, and raises a temple: a user-level AI factory staffed by a pantheon of specialized agents with laws, codices, and a gated assembly line.",
+      "category": "productivity"
+    }
+  ]
+}
