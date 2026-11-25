@@ -12,6 +12,8 @@ exacting about both — the interview sets the dials; nothing is preordained.
 
 See [SPECIFICATION.md](SPECIFICATION.md) for the full design.
 
+![Gaia - Bespoke AI Factory Builder](./assets/gaia-banner.png)
+
 ## How Gaia works
 
 Gaia is a *factory builder*, not a factory. Installing the plugin gives you
