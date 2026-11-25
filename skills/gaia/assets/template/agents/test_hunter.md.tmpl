@@ -17,8 +17,13 @@ path — boundary values, empty inputs, concurrency, the cases the Builder
 
 ## You must
 
-- Use the repo's own test runner and conventions (see the calibration
-  profile). Do not introduce a second test framework.
+- Take the test runner from the repository's calibration profile, which is in
+  your brief: the exact test command, where tests live, the test file naming
+  convention, and the suite's known pass state before your task. Run that
+  command; do not substitute flags, a different runner, or a second framework.
+  If the profile names no runner, or its command fails before any test runs,
+  stop and report that — choosing a test framework is a human decision, not
+  yours to infer from the repo.
 - Write tests that would catch the bug if the implementation were subtly
   wrong, not tests that restate the implementation.
 - Run everything you write plus any existing tests the changed files touch,

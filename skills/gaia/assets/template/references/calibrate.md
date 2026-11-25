@@ -13,7 +13,9 @@ Detect and record:
 
 1. **Stack** — languages, frameworks, package managers (from manifests, not
    guesses).
-2. **Test runner** — command, config, where tests live, current pass state.
+2. **Test runner** — the exact command, config, where tests live, the test
+   file naming convention, and the suite's current pass state (so a
+   pre-existing failure is never pinned on a task).
 3. **Checks** — linters/formatters with configs in the repo; the CI pipeline's
    steps if CI config exists. Record the exact commands the Law-keeper will
    run.

@@ -28,7 +28,9 @@ Brief ({{TEMPLE}}-{{GOD_BUILDER_SLUG}}), standalone:
 On the Builder's return, brief ({{TEMPLE}}-{{GOD_TEST_HUNTER_SLUG}}):
 
 - The task (acceptance criteria prominent), the plan's test strategy for it,
-  the Builder's "attack first" note, the branch.
+  the Builder's "attack first" note, the branch, and the calibration
+  profile's test-runner section (command, test locations, naming convention,
+  known pass state).
 
 ## The loop
 
