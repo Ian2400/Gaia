@@ -12,9 +12,10 @@ This directory is the parameterized temple Gaia forges from. The generator
 | `{{TEMPLE}}`, `{{TEMPLE_TITLE}}`, `{{PURPOSE}}` | interview step 1 |
 | `{{PANTHEON}}`, `{{PANTHEON_DISPLAY}}` | interview step 2 → `../pantheons.json` |
 | `{{GOD_<ROLE>}}`, `{{GOD_<ROLE>_SLUG}}` | pantheon table + per-god overrides |
-| `{{MODEL_<ROLE>}}` | interview step 7 (cost tiers) |
-| `{{GATE_*}}`, `{{WIP_LIMIT}}` | interview step 6 (review surface) |
+| `{{MODEL_<ROLE>}}` | interview step 8 (cost tiers) |
+| `{{GATE_*}}`, `{{WIP_LIMIT}}` | interview step 7 (review surface) |
 | `{{LAWS_*}}`, `{{CANONICAL_ENTRIES}}`, `{{GIFT_ENTRIES}}`, `{{DECLINED_GIFTS}}`, `{{ROSTER_ENTRIES}}` | interview steps 3–5, as drafted blocks |
+| `{{HERALDRY_*}}` | interview step 6 (announcement conventions) |
 | `{{FORGE_DATE}}`, `{{GAIA_VERSION}}` | the forging itself |
 
 ## File classes
@@ -22,7 +23,8 @@ This directory is the parameterized temple Gaia forges from. The generator
 - **Engine** (`SKILL.md.tmpl`, `references/*`, `agents/*`): replaced by Gaia
   upgrades. Marked with an ENGINE FILE comment.
 - **User data** (`laws.md.tmpl`, `canonical.md.tmpl`, `gifts.md.tmpl`,
-  `config.json.tmpl`): forged once, then owned by the user; never overwritten.
+  `heraldry.md.tmpl`, `config.json.tmpl`): forged once, then owned by the
+  user; never overwritten.
 - **Cached data** (`calibrations/`, created at run time): safe to delete.
 
 ## Forging notes (for the Phase 2 generator)

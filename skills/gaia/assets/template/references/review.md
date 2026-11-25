@@ -31,8 +31,9 @@ Dispatch both judges — they are read-only and may run in parallel:
 
 When all of a feature's tasks stand clean, dispatch the Herald
 ({{TEMPLE}}-{{GOD_HERALD_SLUG}}): the assembled diff, spec, verdicts (honest
-ones — waivers named), calibration profile's conventions. Expect: commit
-message, PR description, changelog entry, doc updates.
+ones — waivers named), the temple's `heraldry.md`, and the calibration
+profile's heraldry deviations if it records any. Expect: commit message, PR
+description, changelog entry, doc updates — all conforming to the codex.
 
 ## The merge gate
 

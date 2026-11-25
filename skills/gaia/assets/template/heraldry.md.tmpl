@@ -1,0 +1,53 @@
+# The Heraldry of {{TEMPLE_TITLE}}
+
+<!-- USER DATA — never overwritten by a Gaia engine upgrade.
+     Amended by re-interview (/gaia) or deliberate human edit. -->
+
+The explicit standard for how this temple's work is announced: commit
+messages, PR descriptions, changelogs, attribution. The Herald
+({{GOD_HERALD}}) composes from this codex — never from inferred taste. Where
+an organization forces a standard, it is written here and it is law; where the
+developer has a preference, it is written here and it is consistent.
+
+Precedence: a repository's calibration profile may record **deviations** from
+this codex (an org repo with its own commit convention, say). A recorded
+deviation wins for that repository; everything not deviated follows this file.
+
+## Commit messages
+
+**Format:** {{HERALDRY_COMMIT_FORMAT}}
+<!-- e.g. "conventional commits (type(scope): subject)" or "plain subject + body" -->
+
+- Subject line: {{HERALDRY_COMMIT_SUBJECT}}
+  <!-- e.g. "imperative mood, <= 72 chars, no trailing period" -->
+- Body: {{HERALDRY_COMMIT_BODY}}
+  <!-- e.g. "what changed and why; wrap at 72; reference the task ID" -->
+- Trailers: {{HERALDRY_COMMIT_TRAILERS}}
+  <!-- e.g. required attribution lines, issue links, sign-offs -->
+
+## PR descriptions
+
+Sections, in order (omit none; write "None" rather than dropping a section):
+
+{{HERALDRY_PR_SECTIONS}}
+<!-- e.g.
+1. **Summary** — three sentences max: what and why.
+2. **Changes** — bulleted, by area.
+3. **Verification** — tests run, review verdicts, waivers named.
+4. **Risk & revert** — what could break; how to undo.
+-->
+
+- Title: {{HERALDRY_PR_TITLE}}
+- Draft vs ready: {{HERALDRY_PR_DRAFT_POLICY}}
+
+## Changelog
+
+{{HERALDRY_CHANGELOG}}
+<!-- e.g. "Keep a Changelog format in CHANGELOG.md, entry per PR under
+Unreleased" — or "no changelog kept" -->
+
+## Attribution & sign-offs
+
+{{HERALDRY_ATTRIBUTION}}
+<!-- e.g. org-required Co-Authored-By lines, AI-assistance disclosure policy,
+DCO sign-off -->

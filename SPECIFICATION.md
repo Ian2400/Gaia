@@ -238,10 +238,17 @@ to revise before moving on:
    and a source date (pr-blueprint's rule format).
 5. **Roster** — core seven confirmed/trimmed; reserve bench offered where the
    terrain or purpose calls for them.
-6. **Review surface & autonomy** — which decisions pause for the human
+6. **Heraldry** — the explicit codex for how work is announced: commit message
+   format, PR description sections, changelog policy, attribution/sign-off
+   requirements. A matter of personal taste for individuals and of forced
+   standards for organizations, so it gets an explicit home (`heraldry.md`)
+   rather than "follow existing conventions" — which also saves the Herald
+   from re-deriving style from git history every run. Per-repo deviations are
+   recorded once, at calibration.
+7. **Review surface & autonomy** — which decisions pause for the human
    (creative output? risky code? everything?), whether the Orchestrator pauses
    per task or runs a whole plan, WIP limit.
-7. **Cost tiers** — model assignment per role (strong where quality compounds:
+8. **Cost tiers** — model assignment per role (strong where quality compounds:
    Architect, Builder, Reviewer; cheap where mechanical: Law-keeper checks,
    Herald).
 
@@ -260,6 +267,7 @@ opens:
 │       ├── SKILL.md                     # Orchestrator playbook (engine)
 │       ├── laws.md                      # standards & rules            (user data)
 │       ├── canonical.md                 # one way to do each thing     (user data)
+│       ├── heraldry.md                  # commit/PR/changelog codex    (user data)
 │       ├── gifts.md                     # divine gifts registry        (user data)
 │       ├── config.json                  # pantheon, roster, review surface, tiers (user data)
 │       ├── references/                  # plan / build / review workflows (engine)

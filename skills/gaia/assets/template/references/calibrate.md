@@ -19,10 +19,17 @@ Detect and record:
    run.
 4. **Conventions** — existing CLAUDE.md / CONTRIBUTING / style docs (the
    temple honors them; laws.md wins on direct conflict, and conflicts are
-   listed in the profile for the human to see); commit message style from
-   recent history; branch naming; versioning scheme.
-5. **Shape** — top-level layout, entry points, where specs/docs belong.
-6. **Protected ground** — default branch, anything that looks like generated
+   listed in the profile for the human to see); branch naming; versioning
+   scheme.
+5. **Heraldry deviations** — compare the repo's own commit/PR/changelog
+   conventions (CONTRIBUTING, PR templates, recent history) against the
+   temple's `heraldry.md`. Record only the **differences**, as explicit
+   overrides per codex section; where the repo has no stated convention,
+   record nothing and the codex rules. This is the one place repo style is
+   inferred — once, at calibration, with the human confirming — so the Herald
+   never re-derives it per run.
+6. **Shape** — top-level layout, entry points, where specs/docs belong.
+7. **Protected ground** — default branch, anything that looks like generated
    code or vendored directories (never hand-edited).
 
 ## Confirm
