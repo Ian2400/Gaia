@@ -251,6 +251,13 @@ to revise before moving on:
 8. **Cost tiers** — model assignment per role (strong where quality compounds:
    Architect, Builder, Reviewer; cheap where mechanical: Law-keeper checks,
    Herald).
+9. **Poetics** (only when the Muse is rostered) — the explicit creative codex
+   (`poetics.md`): voice and tone, visual direction, themes and boundaries.
+   Like heraldry, taste gets an explicit home instead of "stay consistent with
+   what was approved": the Muse composes from the codex rather than re-reading
+   approved material each dispatch, and the human's gate rulings are appended
+   to it (approved and rejected directions both — the rejected ledger stops
+   slop from being resubmitted).
 
 ### 5.3 The forging
 Writes the temple to the **user level** so it works in every repo the account
@@ -268,6 +275,7 @@ opens:
 │       ├── laws.md                      # standards & rules            (user data)
 │       ├── canonical.md                 # one way to do each thing     (user data)
 │       ├── heraldry.md                  # commit/PR/changelog codex    (user data)
+│       ├── poetics.md                   # creative codex, Muse temples (user data)
 │       ├── gifts.md                     # divine gifts registry        (user data)
 │       ├── config.json                  # pantheon, roster, review surface, tiers (user data)
 │       ├── references/                  # plan / build / review workflows (engine)

@@ -16,6 +16,7 @@ This directory is the parameterized temple Gaia forges from. The generator
 | `{{GATE_*}}`, `{{WIP_LIMIT}}` | interview step 7 (review surface) |
 | `{{LAWS_*}}`, `{{CANONICAL_ENTRIES}}`, `{{GIFT_ENTRIES}}`, `{{DECLINED_GIFTS}}`, `{{ROSTER_ENTRIES}}` | interview steps 3–5, as drafted blocks |
 | `{{HERALDRY_*}}` | interview step 6 (announcement conventions) |
+| `{{POETICS_*}}` | interview step 9 (creative codex; only when Muse rostered) |
 | `{{FORGE_DATE}}`, `{{GAIA_VERSION}}` | the forging itself |
 
 ## File classes
@@ -23,8 +24,10 @@ This directory is the parameterized temple Gaia forges from. The generator
 - **Engine** (`SKILL.md.tmpl`, `references/*`, `agents/*`): replaced by Gaia
   upgrades. Marked with an ENGINE FILE comment.
 - **User data** (`laws.md.tmpl`, `canonical.md.tmpl`, `gifts.md.tmpl`,
-  `heraldry.md.tmpl`, `config.json.tmpl`): forged once, then owned by the
-  user; never overwritten.
+  `heraldry.md.tmpl`, `poetics.md.tmpl`, `config.json.tmpl`): forged once,
+  then owned by the user; never overwritten. (`poetics.md` is also appended
+  to at human gates, by design — it stays user data because the appended
+  rulings are the human's.)
 - **Cached data** (`calibrations/`, created at run time): safe to delete.
 
 ## Forging notes (for the Phase 2 generator)
@@ -37,3 +40,5 @@ This directory is the parameterized temple Gaia forges from. The generator
 - Workflow references use `{{TEMPLE}}-{{GOD_<ROLE>_SLUG}}` agent names; resolve
   them against the forged roster, and strip stages for roles not rostered
   (e.g. Healer dispatch in `build.md` when no Healer exists).
+- `poetics.md` is forged only when the Muse is rostered; without a Muse, skip
+  the file and strip the Muse/poetics rules from `SKILL.md`.
