@@ -300,10 +300,34 @@ config, existing CLAUDE.md/conventions; draft a one-page profile; show the
 user; cache it in `calibrations/`. Later runs load the cache; `/<temple>
 recalibrate` refreshes it.
 
-### 5.5 Re-interview & upgrade
-`/gaia` on an account with existing temples offers: raise a new temple,
-re-interview an existing one (amend laws/roster/gifts/pantheon), or upgrade its
-engine. User data files are never overwritten by upgrades.
+### 5.5 The temple editor (re-interview & upgrade)
+`/gaia` on an account with existing temples is an editor, not just a forge:
+it offers to raise a new temple, or to amend an existing one. A temple's shape
+is never final — a team that does no creative work today may roster a Muse in
+a year, and must not need to re-answer the whole interview to do it.
+
+Operations, each a focused mini-interview touching only what it names:
+
+- **Roster a god.** Pick the role (reserve bench or a custom one); answer only
+  that role's questions — model tier, any gates it adds to the review surface,
+  and any codex it needs (rostering a Muse triggers the poetics questions
+  *then*, not at original forge time). Gaia forges the new agent file, adds
+  the roster entry to `config.json`, creates the role's user-data files, and
+  **re-forges the engine files** (SKILL.md and references) from the current
+  template so the stages stripped at forge time return. This is safe by
+  construction: engine files carry no user data, so re-forging them loses
+  nothing — which is also why no interview answer may ever be written into an
+  engine file.
+- **Retire a god.** Remove the agent file and roster entry, re-forge the
+  engine without its stages. Its user-data files (a Muse's `poetics.md`) are
+  kept, dormant, in case the god returns.
+- **Amend a codex.** Reopen just the laws, gifts, heraldry, or poetics
+  questions; answers merge into the existing file with new source dates.
+- **Change pantheon.** Re-skin: every agent file is re-forged under the new
+  names, roster slugs update, user data is untouched.
+- **Upgrade the engine.** Replace engine files with the installed Gaia
+  version's, preserving the roster (a re-forge with new templates). User data
+  files are never overwritten by any operation above.
 
 ## 6. The law-keeper works in v1
 

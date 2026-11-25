@@ -42,3 +42,10 @@ This directory is the parameterized temple Gaia forges from. The generator
   (e.g. Healer dispatch in `build.md` when no Healer exists).
 - `poetics.md` is forged only when the Muse is rostered; without a Muse, skip
   the file and strip the Muse/poetics rules from `SKILL.md`.
+- **Roster changes re-forge the engine.** The temple editor (spec §5.5) adds
+  or retires gods after the forge by re-rendering SKILL.md and references/
+  from the then-current template with the new roster — stripped stages must be
+  recoverable. Two invariants make this safe, and both are hard rules for the
+  generator: no interview answer is ever written into an engine file, and no
+  engine content is ever written into a user-data file. A retired god's
+  user-data files are kept, dormant.
