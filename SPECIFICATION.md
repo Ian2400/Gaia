@@ -13,10 +13,12 @@ of specialized agents, governed by laws drawn from your answers, and installed
 in your user account so it travels with you across every repository you open
 there.
 
-One account may hold many temples. A work account gets a temple whose
-law-keeper enforces institutional policy and whose gods know the local servers
-and MCP tools. A personal account might hold two: one for building software,
-one for entertainment, each with its own roster and laws. And each temple is
+One account may hold many temples, and no two need the same shape: one bound
+by institutional policy with rich tooling, one for personal software, one for
+creative work — or any blend, since plenty of professionals do technical and
+creative work in a single context and want gates on both. Each temple is
+defined by its own interview: its roster, its laws, and above all its review
+surface (which decisions pause for the human). And each temple is
 raised to the pantheon of its builder's choosing — Greek by default, but Roman,
 Norse, and Hindu pantheons map onto the same factory roles (see §4).
 
@@ -63,12 +65,12 @@ Principles specific to the builder:
 12. **Temples calibrate to each repo.** A temple carries account-wide laws, but
     on first use in a repository it runs a quick survey (stack, CI, lint,
     conventions) and caches a per-repo profile it then honors.
-13. **The review surface is the dial.** What separates a work temple from an
-    entertainment temple is mostly *what gets surfaced to the human*: a work
-    temple gates security and standards tightly; an entertainment temple gates
-    creative decisions (art direction, game design choices) tightly to prevent
-    slop, while routine code flows with less ceremony. The interview sets this
-    dial per temple.
+13. **The review surface is the dial.** It defines what is most important in a
+    temple: gates sit where mistakes hurt most, and what one temple gates
+    tightly another lets flow. One gates security and standards; another gates
+    creative decisions (art direction, design choices) to prevent slop; a
+    temple serving both technical and creative work gates both. The interview
+    sets the dials per temple — Gaia carries no preference of her own.
 14. **Customization survives upgrades.** A user's laws, rosters, pantheon
     choice, and calibration are data files the Gaia engine never overwrites;
     re-running `/gaia` upgrades engine files and offers a re-interview.
@@ -114,8 +116,8 @@ the default skin.
 | **Deep-keeper** | Poseidon | Data & infrastructure — databases, migrations, environments | DB/warehouse gifts in terrain |
 | **Healer** | Asclepius | Debugger — root-cause diagnosis of failures the test hunter can't explain | Complex systems |
 | **Victor** | Nike | Certifies finished wholes: declares victory on an assembled feature against the original request before the Herald may draft its PR; also prepares releases (tags, notes, deploy/revert checklists) | Multi-task features; repos with release processes |
-| **Muse** | The Muses | Creative generation — narrative, design, game content | Entertainment temples |
-| **Reveler** | Dionysus | Playtester — experiences the entertainment as a user would | Entertainment temples |
+| **Muse** | The Muses | Creative generation — narrative, design, game content | Creative work in scope |
+| **Reveler** | Dionysus | Playtester — experiences the product as a user would | Interactive experiences in scope |
 
 ### The assembly line (inside every temple)
 
@@ -143,9 +145,10 @@ Herald: commit, PR description, docs
 ```
 
 The pipeline's *stages* are fixed; the **review surface** — which decisions
-pause for a human — is per-temple config. An entertainment temple inserts a
-human gate on creative output (Muse deliverables, design decisions) and may
-relax the code-review gate; a work temple does the opposite.
+pause for a human — is per-temple config. One temple inserts a human gate on
+creative output (Muse deliverables, design decisions); another gates risky
+code tightly; a temple doing both kinds of work gates both. The stages that
+have nothing to judge simply never fire.
 
 ## 4. Pantheons (role → deity mapping)
 
@@ -228,9 +231,10 @@ across sessions (as pr-blueprint does). Its phases:
 Topic by topic, each answer drafted into the temple's data files for the user
 to revise before moving on:
 
-1. **Temple name & purpose** — purpose (work software / personal software /
-   entertainment / other) selects the default roster, pipeline, and review
-   surface. The chosen name is sanity-checked by a small bundled script (not an
+1. **Temple name & purpose** — purpose is described in the user's own words,
+   not picked from a taxonomy; Gaia proposes a default roster and review
+   surface from it, and the user adjusts both in later steps. There are no
+   temple "types" and no preordained shapes. The chosen name is sanity-checked by a small bundled script (not an
    agent, for consistency) against installed skills, commands, and agent names,
    so `/olympus` or `/asgard` can't shadow something already present.
 2. **Pantheon** — Greek, Roman, Norse, Hindu, or custom; per-god overrides.
@@ -367,11 +371,12 @@ Then, in any account: `/gaia`.
 3. **Phase 2 — The generator:** the `/gaia` skill — terrain survey (with guide
    mode and the starter-kit catalog), interview, pantheon selection, forging,
    state/resume.
-4. **Phase 3 — Shakedown:** raise a real work temple on this account; run a
-   small feature through it end-to-end; tune the template from what breaks.
-5. **Phase 4 — Second terrain:** raise a personal/entertainment temple (likely
-   under a non-Greek pantheon, to prove the mapping) with the creative review
-   surface; add Muse/Reveler templates.
+4. **Phase 3 — Shakedown:** raise a real temple on this account; run a small
+   feature through it end-to-end; tune the template from what breaks.
+5. **Phase 4 — Second terrain:** raise a second temple of a deliberately
+   different shape — different pantheon (to prove the mapping), Muse and
+   Reveler rostered, gates on creative output — to prove the roster and
+   review surface actually flex.
 6. **Phase 5 — Plugin polish:** marketplace metadata, upgrade path, docs,
    publish.
 7. **v2 (later):** pr-blueprint-style learning loop (feedback → proposed law

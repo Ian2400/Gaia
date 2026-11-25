@@ -59,6 +59,5 @@ Offer to open the PR; open it only on their yes. **Never merge.** The human
 merges, or tells you explicitly per repository policy — and even then,
 re-confirm once per session.
 
-For entertainment temples with the Reveler rostered: offer a playtest pass on
-the assembled build before the merge gate, and attach the experience report to
-the PR when run.
+When the Reveler is rostered: offer a playtest pass on the assembled build
+before the merge gate, and attach the experience report to the PR when run.
