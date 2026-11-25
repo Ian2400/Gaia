@@ -113,7 +113,7 @@ the default skin.
 | **Steward** | Hestia | Housekeeping — dependencies, dead code, hygiene | Mature codebases |
 | **Deep-keeper** | Poseidon | Data & infrastructure — databases, migrations, environments | DB/warehouse gifts in terrain |
 | **Healer** | Asclepius | Debugger — root-cause diagnosis of failures the test hunter can't explain | Complex systems |
-| **Victor** | Nike | Release management — tags, release notes, deploy checklists | Repos with release processes |
+| **Victor** | Nike | Certifies finished wholes: declares victory on an assembled feature against the original request before the Herald may draft its PR; also prepares releases (tags, notes, deploy/revert checklists) | Multi-task features; repos with release processes |
 | **Muse** | The Muses | Creative generation — narrative, design, game content | Entertainment temples |
 | **Reveler** | Dionysus | Playtester — experiences the entertainment as a user would | Entertainment temples |
 
@@ -133,6 +133,9 @@ Test hunter: tests pass ──► fail? loop (max 3, then escalate)
 Reviewer: read-only review ──► findings? back to Builder
    ▼
 Law-keeper: automated gates (the temple's laws)
+   ▼
+Victory declaration: the assembled whole vs. the original request
+(Victor when rostered, else the Orchestrator's own checklist)
    ▼
 Herald: commit, PR description, docs
    ▼

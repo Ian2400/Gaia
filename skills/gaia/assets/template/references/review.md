@@ -27,9 +27,26 @@ Dispatch both judges — they are read-only and may run in parallel:
 - If the review surface gates this class of work (creative output, risky
   code), the human sees the verdicts before anything proceeds, clean or not.
 
+## The victory declaration
+
+When all of a feature's tasks stand clean — before any heralding — the
+assembled work must be certified against the original request:
+
+- **Victor rostered:** dispatch the Victor ({{TEMPLE}}-{{GOD_VICTOR_SLUG}})
+  with `spec.md`, the original request in the human's words, and the full
+  assembled diff. NOT YET → the gaps go back through the line (new tasks via
+  the Architect if the plan missed them, the Builder if a task fell short);
+  the Herald is not dispatched until VICTORY or the human waives.
+- **No Victor rostered:** perform the check yourself — walk the acceptance
+  criteria against the assembled result and present the checklist at the
+  merge gate, labeled as your own check, not a Victor's declaration.
+
+Single-task features where the Reviewer already verified every acceptance
+criterion may skip the dispatch; say so when presenting the merge gate.
+
 ## The Herald
 
-When all of a feature's tasks stand clean, dispatch the Herald
+When the feature stands victorious, dispatch the Herald
 ({{TEMPLE}}-{{GOD_HERALD_SLUG}}): the assembled diff, spec, verdicts (honest
 ones — waivers named), the temple's `heraldry.md`, and the calibration
 profile's heraldry deviations if it records any. Expect: commit message, PR
