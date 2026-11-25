@@ -40,5 +40,21 @@ Draft the profile as one page. Show the human; apply their corrections. Cache
 it. Later invocations load the cache silently. `recalibrate` re-runs this
 survey and shows the diff against the cached profile.
 
+## Profile patches (mid-run drift)
+
+Calibration items are often discovered by running something: the recorded test
+command fails, a check command no longer exists, a convention proves stale.
+When a run contradicts the profile:
+
+- Note the contradiction and the evidence; keep working around it for the
+  current task if possible (the agent that hit it reports it rather than
+  silently adapting).
+- At the **next human gate**, present a targeted patch: the one field, old
+  value → proposed value, the evidence. On yes, apply it to the cached profile
+  with a dated note; on no, record the human's correction instead.
+- Never silently rewrite the profile mid-run, and never patch more than the
+  contradicted fields this way — a drifted repo (many fields wrong at once)
+  gets `recalibrate`, not a pile of patches.
+
 The profile is **cached data** — a Gaia upgrade never touches it, and deleting
 it is always safe (the temple just recalibrates).

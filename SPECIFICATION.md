@@ -298,7 +298,16 @@ opens:
 On a temple's first invocation in a repo: detect stack, test runner, CI, lint
 config, existing CLAUDE.md/conventions; draft a one-page profile; show the
 user; cache it in `calibrations/`. Later runs load the cache; `/<temple>
-recalibrate` refreshes it.
+recalibrate` refreshes it wholesale.
+
+Calibration items are often discovered by running something, so the profile is
+also **patchable at gates**: when a run contradicts it (the recorded test
+command fails, a convention proves stale), the Orchestrator presents a
+targeted one-field patch — old value, proposed value, evidence — at the next
+human gate and applies it on approval, dated. Silent rewrites are forbidden,
+and a repo drifted in many fields gets a full recalibrate rather than a pile
+of patches. This keeps a temple's first weeks self-correcting without
+ceremony.
 
 ### 5.5 The temple editor (re-interview & upgrade)
 `/gaia` on an account with existing temples is an editor, not just a forge:
